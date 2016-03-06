@@ -1,0 +1,88 @@
+<html>
+    <head>
+        <title>PoC - EVRYTHNG</title>
+        <script src="https://raw.githubusercontent.com/leemachin/say-cheese/master/say-cheese.js"></script>
+        <script src="view-source:https://pixlcore.com/demos/webcamjs/webcam.js"> </script>
+  
+    </head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="layout.css">
+    <body>
+        <div class="container">
+            <!-- PROJECT SWITCHER -->
+            <div class="actions">
+                  <button id="projectSelector" class="btn btn-primary" >Click to change selected project</button>     
+            </div>
+             <div class="json">
+               Selected Project <span id="projectspan"></span>
+               <br>
+                <div id="sproject"></div>
+            </div>
+            
+            
+            <!-- GEOLOCATION SWITCHER -->
+            <div class="actions">
+               <button id="kogeoactive" class="btn btn-primary" >Request location on scan</button>
+            </div>
+            
+            <div class="json">
+               Geolocation request <span id="geoLocationStatus"></span>
+               <br>
+                <div id="geostatus"></div>
+            </div>
+            
+            <!-- WEBCAM AND SNAPSHOT AREA -->
+            <div id="kocam"></div>
+            <div id="kocanvas" style="border:1px solid #d3d3d3;"></div>
+            
+            <!-- SCAN ACTIONS -->
+           <div class="actions">
+               <div class="btn-group">
+                   <button id="kosnap" class="btn btn-primary" >Snapshot Photo</button>
+                   <button id="koscan" class="btn btn-primary" >Upload Photo</button>
+               </div>
+            </div>
+            
+            
+             <!-- OTHER ACTIONS -->
+             <div class="actions">
+               <button id="koproducts" class="btn btn-primary" >Products</button>
+               <button id="kogeolocation" class="btn btn-primary" >Location</button>
+            </div>
+           
+            <!-- JSON RESULTS -->
+            <div class="json">
+               JSON Scan Result <span id="productName"></span>
+               <br>
+               <div id="results"></div>
+            </div>
+            
+             <div class="json">
+               JSON Products Result <span id="products"></span>
+               <br>
+                <div id="allResults"></div>
+            </div>
+                 
+            <!-- LOCATION -->  
+            <div class="json">
+               Location <span id="spanlocation"></span>
+               <br>
+                <div id="location"></div>
+            </div>
+        </div>
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+        <!-- Latest compiled and minified JavaScript - Bootstrap -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+        <script src="bower_components/evrythng/dist/evrythng.min.js">"></script>
+        <script src="bower_components/evrythng-scan/dist/evrythng-scan.min.js"></script>
+        <script src="script-scan.js"></script>
+        <script src="script-webcam.js"></script> 
+        <script src="script-project.js"></script>
+        <script src="script-products.js"></script>
+        <script src="script-location.js"></script>
+   
+     
+        
+    </body>
+</html>

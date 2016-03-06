@@ -1,0 +1,30 @@
+.container {
+    text-align: center;
+    margin: 0 auto;
+    width: 800px;
+}
+
+#kocam{
+    margin: 20px;
+    display: inline-block
+}
+
+#kocanvas{
+    float: right;
+    width: 320px;
+    height: 240px;
+    margin: 20px;
+    display: inline-block;
+}
+
+.actions{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 800px;
+}
+
+.json{
+    margin: 20px;
+    width: 800px;
+    text-align: left;
+}
